@@ -1,0 +1,218 @@
+body {
+    font-family: 'Sono', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: lightgray;
+}
+
+
+  h1{
+    float: center;
+    font-size: 30px;
+    font-weight: 600;
+    font: bolder;
+    color: lightgreen;
+    
+  }
+  h3{
+    font-style: italic;
+    font-size: large;
+  }
+  table{
+    color: darkorange;
+  }
+  a {
+    color: #357b70;
+  }
+  a:hover {
+    color:darkred;
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }
+  a:visited {
+    /* visited link */
+    color: purple;
+  }
+a:active {
+    /* selected link */
+    color: green;
+  }
+  a:focus {
+    outline: 2px solid blue;
+  }
+
+  button {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+button:active {
+    background-color: lightcoral;
+}
+
+button:focus {
+    border: 2px solid red;
+}
+button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+    transition-duration: .02s;
+  }
+  .button__secondary {
+    background-color: #e0b354;
+    color: white;}
+
+    .button, button {
+        /* overwrites browser defaults */
+        /* resets the border */
+        border: none;
+        display: inline-block;
+        /* takes the font from the outer container */
+        font-family: inherit;
+        /* style button */
+        background-color: #357b70;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 3px;
+        /* width of the border, type, color */
+        border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+        transition: 0.2s opacity;
+    }
+.page-header {
+    display: right;
+    width: 100%;
+    padding: 10px;
+}
+
+.navigation-list li{
+    display: inline-block;
+    margin-left: 15px;
+   
+}
+
+
+    .main_about{
+        text-align: center;
+      }
+
+      .presentation{
+        float: top;
+      }
+    
+    .page-footer {
+        clear: both;
+        display: flexbox;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile__text {
+        flex: 1 1 100px;
+    }
+    .profile {
+        max-width: 550px;
+        margin: 0 auto;
+      }
+      .profile__portrait {
+        float: left;
+        width: 250px;
+        margin-right: 40px;
+        border-radius: 50%;
+      }
+    
+      * {
+        box-sizing: border-box;
+      }
+      #grid-container{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        
+      }
+      #grid-container .grid_item {
+        background-color: grey;
+        color: black;
+        text-align: center;
+        min-height: 250px;
+      }
+      
+      
+      @keyframes color-change {
+        0% {
+          fill: #edc655;
+        }
+        50% {
+          fill: #fcffad;
+        }
+        100% {
+          fill: #f76414;
+        }
+      }
+      .sun {
+        animation: 4s color-change infinite alternate linear;
+      }
+      @keyframes cloud-move {
+        from {
+          transform: translate(0, 50px);
+        }
+        to {
+          transform: translate(200px, 50px);
+        }
+        
+      }
+      .cloud-front {
+        animation-duration: 30s;
+        animation-name: cloud-move;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+      }
+      @keyframes cloud-move-reverse {
+        from {
+          transform: translate(446px, 48px);
+        }
+        to {
+          transform: translate(100px, 48px);
+        }
+      }
+      .cloud-back {
+        animation: 34s cloud-move-reverse infinite alternate linear;}
+        
+        @media all and (max-width: 500px) {
+            #grid-container {
+              grid-template-columns: 1fr;
+              grid-gap: 10px;
+            }
+            .grid__item:last-child {
+              grid-column: auto / auto;
+              grid-row: auto / auto;
+            }
+            h1 {
+              font-size: 22px;
+            }
+          }
+          @media all and (min-width: 500px) and (max-width: 750px){
+            #grid-container {
+              grid-template-columns: 1fr 1fr;
+              grid-gap: 10px;
+            }
+            .grid__item:last-child {
+              grid-column: auto / auto;
+              grid-row: auto / auto;
+            }
+            h1 {
+              font-size: 22px;
+            }
+          }
+    
