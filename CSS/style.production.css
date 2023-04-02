@@ -13,6 +13,11 @@ body {
     background-color: lightgray;
 }
 
+h2{
+  text-align: center;
+  color: blue;
+}
+
 
   h1{
     float: center;
@@ -27,10 +32,11 @@ body {
     font-size: large;
   }
   table{
-    color: orange;
+    color: blue;
   }
   a {
     color: #357b70;
+
   }
   a:hover {
     color:red;
@@ -55,6 +61,8 @@ a:active {
     font-size: 14px;
     padding: 10px 20px;
 }
+
+
 
 button:hover {
     background-color: darkgreen;
@@ -103,6 +111,7 @@ button:hover, button:focus {
     display: right;
     width: 100%;
     padding: 10px;
+    text-align: center;
 }
 
 .navigation-list li{

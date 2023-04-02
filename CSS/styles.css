@@ -7,6 +7,7 @@ body {
 }
 
 
+
   h1{
     float: center;
     font-size: 30px;
@@ -15,6 +16,13 @@ body {
     color: lightgreen;
     
   }
+ 
+
+  h2{
+  font:bold;
+    
+  }
+
   h3{
     font-style: italic;
     font-size: large;
@@ -24,6 +32,8 @@ body {
   }
   a {
     color: #357b70;
+   
+  
   }
   a:hover {
     color:darkred;
@@ -47,6 +57,7 @@ a:active {
     color: white;
     font-size: 14px;
     padding: 10px 20px;
+    
 }
 
 button:hover {
@@ -56,6 +67,7 @@ button:hover {
 button:active {
     background-color: lightcoral;
 }
+
 
 button:focus {
     border: 2px solid red;
@@ -69,7 +81,8 @@ button:hover, button:focus {
   }
   .button__secondary {
     background-color: #e0b354;
-    color: white;}
+    color: white;
+    display: center;}
 
     .button, button {
         /* overwrites browser defaults */
@@ -89,7 +102,8 @@ button:hover, button:focus {
         transition: 0.2s opacity;
     }
 .page-header {
-    display: right;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     padding: 10px;
 }
@@ -97,8 +111,35 @@ button:hover, button:focus {
 .navigation-list li{
     display: inline-block;
     margin-left: 15px;
-   
+    
 }
+
+
+.navigation-list__item{
+  text-align: center;
+  display: block;
+  clear: both;
+  padding: 50px 0px;
+  
+}
+
+.table{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+.page-footer{
+  clear:both;
+  display: flex;
+  text-align: center;
+  padding: 50px 0;
+
+}
+
 
 
     .main_about{
